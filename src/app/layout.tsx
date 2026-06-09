@@ -1,7 +1,7 @@
 import React from 'react'
 
 export const metadata = {
-  title: 'Blog - Next.js App Router'
+  title: 'Blog LA 2028 - Chrys Penalber'
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
