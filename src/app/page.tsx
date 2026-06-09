@@ -7,6 +7,7 @@ export default function HomePage() {
   const artigos = getArtigos()
 
   return (
+    
     <section>
       <h2>Artigos</h2>
       <div>
