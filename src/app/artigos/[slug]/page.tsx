@@ -4,10 +4,21 @@ import { Metadata } from "next";
 import { Artigo } from "../../../types/Artigo";
 import Link from "next/link";
 
+type PageProps = {
+  params: Promise<{
+    slug: string;
+  }>;
+};
+
 export const dynamic = "force-static";
 
-export async function generateMetadata({ params }: any): Promise<Metadata> {
-  const artigo = getArtigoBySlug(params.slug as string);
+export async function generateMetadata(
+  { params }: PageProps
+): Promise<Metadata> {
+
+  const { slug } = await params;
+
+  const artigo = await getArtigoBySlug(slug);
   if (!artigo) {
     return { title: "Artigo não encontrado", description: "Artigo não existe" };
   }
@@ -17,13 +28,19 @@ export async function generateMetadata({ params }: any): Promise<Metadata> {
   };
 }
 
-export function generateStaticParams() {
-  const artigos = getArtigos();
-  return artigos.map((a) => ({ slug: a.slug }));
-}
+export async function generateStaticParams() {
+  const artigos = await getArtigos();
 
-export default function ArtigoPage({ params }: any) {
-  const artigo = getArtigoBySlug(params.slug as string);
+  return artigos.map((a) => ({
+    slug: a.slug
+  }));
+}
+export default async function ArtigoPage(
+  { params }: PageProps
+) {
+  const { slug } = await params;
+
+  const artigo = await getArtigoBySlug(slug);
   if (!artigo) return notFound();
 
   return (

@@ -3,8 +3,8 @@ import ArtigoCard from '../components/ArtigoCard'
 
 export const dynamic = 'force-static'
 
-export default function HomePage() {
-  const artigos = getArtigos()
+export default async function HomePage() {
+  const artigos = await getArtigos()
 
   return (
     
