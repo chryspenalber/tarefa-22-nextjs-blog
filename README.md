@@ -7,7 +7,7 @@
 # Blog Olímpico — Next.js + TypeScript
 **Projeto desenvolvido por Chrys Penalber**
 
-Aplicação de blog/portal olímpico desenvolvida com **Next.js (App Router)** e **TypeScript**. O projeto apresenta uma página inicial, listagem de artigos (`/artigos`) e páginas individuais geradas a partir de dados locais.
+Aplicação de blog olímpico desenvolvida com **Next.js (App Router)** e **TypeScript**. O projeto apresenta uma página inicial, listagem de artigos (`/artigos`) e páginas individuais geradas a partir de dados locais.
 
 ---
 
@@ -114,7 +114,7 @@ npm run dev
 # Olympic Blog — Next.js + TypeScript
 **Project developed by Chrys Penalber**
 
-Olympic blog/portal built with **Next.js (App Router)** and **TypeScript**. The project includes a home page, an articles listing and individual article pages generated from local data.
+Olympic blog built with **Next.js (App Router)** and **TypeScript**. The project includes a home page, an articles listing and individual article pages generated from local data.
 
 ---
 
