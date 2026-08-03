@@ -4,10 +4,10 @@
 <a id="portugues"></a>
 ## Versão em Português
 
-# Blog de Viagens — Next.js + TypeScript
+# Blog Olímpico — Next.js + TypeScript
 **Projeto desenvolvido por Chrys Penalber**
 
-Aplicação de blog/portal de viagens desenvolvida com **Next.js (App Router)** e **TypeScript**. O projeto apresenta uma página inicial, listagem de artigos (`/artigos`) e páginas individuais geradas a partir de dados locais.
+Aplicação de blog/portal olímpico desenvolvida com **Next.js (App Router)** e **TypeScript**. O projeto apresenta uma página inicial, listagem de artigos (`/artigos`) e páginas individuais geradas a partir de dados locais.
 
 ---
 
@@ -111,10 +111,10 @@ npm run dev
 <a id="english"></a>
 ## English Version
 
-# Travel Blog — Next.js + TypeScript
+# Olympic Blog — Next.js + TypeScript
 **Project developed by Chrys Penalber**
 
-Travel blog/portal built with **Next.js (App Router)** and **TypeScript**. The project includes a home page, an articles listing and individual article pages generated from local data.
+Olympic blog/portal built with **Next.js (App Router)** and **TypeScript**. The project includes a home page, an articles listing and individual article pages generated from local data.
 
 ---
 
